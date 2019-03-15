@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript com Objetos </title>
+	<meta charset="utf-8">
+	  <script>
+	  	function mudaLampada(tipo) {
+	  		if (tipo==1) {
+	  			arquivo ="_imagens/lampada-acesa.jpg";
+	  		}
+	  		if (tipo==2) {
+	  			arquivo ="_imagens/lampada-apagada.jpg";
+	   		}
+	   		if (tipo==3) {
+	   			arquivo ="_imagens/lampada-quebrada.jpg";
+	   		}
+	  	document.getElementById("luz").src=arquivo;	  
+	  	}
+
+	  	
+		</script>
+</head>
+<body> 
+	<h1>Acenda ou quebre a Lâmpada</h1>
+	<img src="_imagens/lampada-apagada.jpg"	id="luz" onmousemove= "mudaLampada(1)" onmouseout= "mudaLampada(2)"onclick="mudaLampada(3)"/>
+
+<!--EFEITO ao PASSAR o Mause, ao TIRAR o Mause e ao Clicar com o Mause-->
+
+
+</body>
+</html>

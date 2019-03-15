@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript com Objetos </title>
+	<meta charset="utf-8">
+	  <script>
+	  	var quebrada = false;
+	  	function mudaLampada(tipo) {
+	  	/*quebrada é falsa ate que prove o contrario, assim q quebrada continua quebrada*/
+	   		if (!quebrada){
+	     	document.getElementById("luz").src = "_imagens/"+ tipo +".jpg";
+	     	if (tipo=='lampada-quebrada') {
+	     		quebrada=true;
+	     	 }  
+	  	 }
+	  	}
+	  	
+		</script>
+</head>
+<body> 
+	<h1>Acenda ou Quebre a Lâmpada</h1>
+	<img src="_imagens/lampada-apagada.jpg"	id="luz" 
+	onmousemove="mudaLampada('lampada-acesa')"
+	onmouseout= "mudaLampada('lampada-apagada')"
+	onclick= "mudaLampada('lampada-quebrada')"/>
+
+<!---FEITO ao PASSAR o Mause, ao TIRAR o Mause e ao Clicar com o Mause-->
+
+
+</body>
+</html>
